@@ -1,0 +1,9 @@
+<%- include('../partials/header') %>
+<main style="padding:20px">
+  <h2>Editar Documento <%= id %></h2>
+  <form action="/admin/edit/<%= id %>?_method=PUT" method="POST">
+    <input name="title" value="Documento <%= id %>">
+    <button type="submit">Guardar</button>
+  </form>
+</main>
+<%- include('../partials/footer') %>
